@@ -469,7 +469,8 @@ footer {
     max-width: 1080px;
     justify-content: space-between;
     align-content: center;
-    margin: 0 10px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .footer-text {
