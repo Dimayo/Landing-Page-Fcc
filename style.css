@@ -620,7 +620,7 @@ footer {
 @media (max-width: 532px) {
 
     .img-container {
-        grid: repeat(6, 120px) / repeat(3, 120px);
+        grid: repeat(6, 115px) / repeat(3, 115px);
         grid-gap: 10px;
     }
 
