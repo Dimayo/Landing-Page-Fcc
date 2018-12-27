@@ -151,12 +151,14 @@ h1 {
 
 #edge {
     text-align: center;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 h2 {
     font-size: 40px;
     color: rgb(110, 110, 110);
+    margin:0;
+    padding: 80px 10px 25px 10px;
 }
 
 .edge-items {
@@ -164,7 +166,7 @@ h2 {
     margin: 0 auto;
     justify-content: space-around;
     max-width: 1200px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .edge-image{
@@ -338,7 +340,6 @@ hr {
 
 #contacts {
     text-align: center;
-    padding-top: 20px;
 }
 
 .contacts-inst {
@@ -389,7 +390,8 @@ hr {
     font-family: 'Roboto', sans-serif;
     color: rgb(110, 110, 110);
     font-size: 18px;
-    margin: 10px;
+    margin: 0;
+    padding: 0 0 10px 0;
 }
 
 .email-form {
