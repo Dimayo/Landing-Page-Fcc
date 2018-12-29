@@ -16,7 +16,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1475">
+            <state relative-caret-position="2040">
               <caret line="137" selection-start-line="137" selection-end-line="137" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="265" column="12" lean-forward="true" selection-start-line="265" selection-start-column="12" selection-end-line="265" selection-end-column="12" />
+            <state relative-caret-position="1904">
+              <caret line="199" column="81" selection-start-line="199" selection-start-column="81" selection-end-line="199" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -72,23 +72,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Landing-Page-Fcc" type="cbb8eebc:String" user="Landing-Page-Fcc" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="fcc_landing_page" type="b2602c69:ProjectViewProjectNode" />
               <item name="fcc_landing_page" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Landing-Page-Fcc" type="cbb8eebc:String" user="Landing-Page-Fcc" />
             </path>
           </expand>
           <select />
@@ -182,6 +182,10 @@
       <workItem from="1545978067525" duration="446000" />
       <workItem from="1545978894476" duration="2598000" />
       <workItem from="1545991580368" duration="52000" />
+      <workItem from="1545991840932" duration="112000" />
+      <workItem from="1545996847145" duration="9000" />
+      <workItem from="1546010292775" duration="16000" />
+      <workItem from="1546065909738" duration="1093000" />
     </task>
     <task id="LOCAL-00001" summary="Changed width of the image">
       <created>1545461684309</created>
@@ -194,7 +198,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115118000" />
+    <option name="totallyTimeSpent" value="116348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -254,14 +258,14 @@
     <entry file="file://$PROJECT_DIR$/Images/calories.svg" />
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="265" column="12" lean-forward="true" selection-start-line="265" selection-start-column="12" selection-end-line="265" selection-end-column="12" />
+        <state relative-caret-position="1904">
+          <caret line="199" column="81" selection-start-line="199" selection-start-column="81" selection-end-line="199" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1475">
+        <state relative-caret-position="2040">
           <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
