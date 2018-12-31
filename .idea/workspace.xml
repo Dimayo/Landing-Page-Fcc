@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e330ca1c-ed9b-4dc1-a110-84ad4de8b72f" name="Default" comment="Changed width of the image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
+            <state relative-caret-position="863">
               <caret line="137" selection-start-line="137" selection-end-line="137" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -29,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
+            <state relative-caret-position="3383">
               <caret line="199" column="81" selection-start-line="199" selection-start-column="81" selection-end-line="199" selection-end-column="81" />
             </state>
           </provider>
@@ -72,23 +71,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="fcc_landing_page" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fcc_landing_page" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Landing-Page-Fcc" type="cbb8eebc:String" user="Landing-Page-Fcc" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fcc_landing_page" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fcc_landing_page" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -186,6 +185,8 @@
       <workItem from="1545996847145" duration="9000" />
       <workItem from="1546010292775" duration="16000" />
       <workItem from="1546065909738" duration="1093000" />
+      <workItem from="1546068267240" duration="11000" />
+      <workItem from="1546098783937" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="Changed width of the image">
       <created>1545461684309</created>
@@ -198,7 +199,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116348000" />
+    <option name="totallyTimeSpent" value="116959000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -211,7 +212,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10572917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973656" />
@@ -256,21 +256,21 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Images/calories.svg" />
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="199" column="81" selection-start-line="199" selection-start-column="81" selection-end-line="199" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
+        <state relative-caret-position="863">
           <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3383">
+          <caret line="199" column="81" selection-start-line="199" selection-start-column="81" selection-end-line="199" selection-end-column="81" />
         </state>
       </provider>
     </entry>
