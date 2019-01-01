@@ -625,8 +625,19 @@ footer {
     max-width: 180px;
   }
 
-  #form input[type="email"] {
-    width: 200px;
+  #submit {
+    width: 30%;
   }
 
 }
+
+@media (max-width: 380px) {
+
+.img-container {
+  grid: repeat(6, 100px) / repeat(3, 100px);
+  grid-gap: 5px;
+}
+
+}
+
+
