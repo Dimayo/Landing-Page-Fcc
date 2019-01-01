@@ -244,7 +244,7 @@ h3 {
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: rgb(103, 184, 45);
+  background-color: #67b82d;
   left: -20px;
   top: 12%;
   transform: rotate(45deg);
@@ -256,6 +256,11 @@ h3 {
   background-color: rgb(250, 250, 250);
 }
 
+.menu-image {
+  height: 150px;
+  width: 150px;
+}
+
 .menu-items {
   display: flex;
   flex-direction: row;
@@ -265,56 +270,43 @@ h3 {
 }
 
 .menu-item {
-  background-color: white;
+  background: linear-gradient(-45deg, #E4F7D2 50%, rgba(255, 255, 255, 0.5) 50%);
   padding: 20px 30px;
   color: rgb(110, 110, 110);
   font-family: 'Roboto', sans-serif;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   flex-basis: 230px;
+  transition: all 0.5s ease-out;
+}
+
+.menu-item:hover {
+ box-shadow: 0 28px 56px rgba(0, 0, 0, 0.25),
+ 0 20px 20px rgba(0, 0, 0, 0.22);
 }
 
 .menu-text {
   text-align: justify;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  position: relative;
-}
-
-.menu-img {
-  padding-right: 10px;
-  position: absolute;
-  left: -35px;
-  top: -5px;
-}
-
-hr {
-  border: none;
-  color: rgb(228, 247, 210);
-  background-color: rgb(228, 247, 210);
-  height: 1px;
+  display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 
-.menu-picture {
-  height: 80px;
-  width: 80px;
-  padding: 18px;
-  border-color: rgb(228, 247, 210);
+.menu-header {
+  margin: 0;
+  padding: 20px 10px 15px 10px;
 }
+
 
 .menu-order {
   display: flex;
-  border: none;
+  border: 1px solid rgb(110, 110, 110);
   font-size: 16px;
-  color: rgb(250, 250, 250);
+  color:rgb(110, 110, 110);
   width: 120px;
   height: 35px;
   transition: 0.5s;
-  background-color: rgb(110, 110, 110);
-  transition-property: background-color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
+  background-color: transparent;
+  transition: all 0.3s ease;
   border-radius: 3px;
   font-weight: 900;
   text-transform: uppercase;
@@ -323,10 +315,12 @@ hr {
   justify-content: center;
   align-items: center;
   align-self: center;
+  margin-bottom: 15px;
 }
 
 .menu-order:hover {
-  background-color: rgb(103, 184, 45);
+  background-color: rgb(110, 110, 110);
+  color: white;
 }
 
 .order-container {
@@ -411,6 +405,7 @@ hr {
   transition-timing-function: ease;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
+  height: 38px;
 }
 
 #email:hover,
@@ -423,7 +418,7 @@ hr {
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
   color: rgb(250, 250, 250);
-  height: 39px;
+  height: 38px;
   transition: 0.5s;
   background-color: rgb(103, 184, 45);
   transition-property: background-color;
@@ -634,7 +629,4 @@ footer {
     width: 200px;
   }
 
-  #submit {
-    left: 231px;
-  }
 }
