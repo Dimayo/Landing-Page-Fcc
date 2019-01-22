@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   margin: 0;
   padding: 0;
