@@ -91,15 +91,11 @@ body {
   left: 50%;
   bottom: 0;
   position: absolute;
-  -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.nav-link:hover::after,
-.nav-link:focus::after {
+.nav-link:hover::after {
   width: 100%;
 }
 
