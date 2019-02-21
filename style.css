@@ -44,7 +44,7 @@ body {
   justify-content: center;
   z-index: 999;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.082),
-  0 3px 6px rgba(0, 0, 0, 0.096);
+    0 3px 6px rgba(0, 0, 0, 0.096);
 }
 
 .nav-wrapper {
@@ -57,14 +57,14 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
-  margin:0;
+  margin: 0;
   padding: 0 30px;
 }
 
 .nav-links {
   display: flex;
   flex-direction: row;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -103,6 +103,81 @@ body {
 .nav-link:hover {
   color: rgb(103, 184, 45);
 }
+
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+
+.menu-elements {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 20px;
+  right: 15px;
+  height: 22px;
+  width: 22px;
+  display: none;
+}
+
+.element {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(103, 184, 45);
+}
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.menu-elements>.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked~.menu-elements>.diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.menu-elements>.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
 
 .title-wrapper {
   align-self: flex-end;
@@ -604,8 +679,29 @@ footer {
     grid-gap: 10px;
   }
 
-  .nav-links {
+  #nav-links {
     display: none;
+    opacity: 0;
+    height: 240px;
+    position: fixed;
+    right: 0;
+    width: 0;
+    margin-top: 60px;
+    transition: all 500ms ease-in-out;
+    background-color: rgba(250, 250, 250, 0.911);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="checkbox"]:checked~#nav-links {
+    display: flex;
+    opacity: 1;
+    width: 100%
+  }
+
+  .menu-elements {
+    display: block;
   }
 
   .logo-container {
