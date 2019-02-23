@@ -13,6 +13,21 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 #header {
   background-image: url("Images/main.jpg");
   height: 600px;
@@ -328,8 +343,8 @@ h3 {
 }
 
 .menu-image {
-  height: 150px;
-  width: 150px;
+  height: 132px;
+  width: 173px;
 }
 
 .menu-items {
@@ -566,6 +581,103 @@ footer {
   color: rgb(103, 184, 45);
 }
 
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.overlay .popup {
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  top: 35vh;
+  max-width:750px;
+  width:85%;
+  transform: translateX(-50%);
+}
+
+.overlay .popup-close {
+  position: absolute;
+  right: -20px;
+  top: -35px;
+  cursor: pointer;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+.overlay .popup-title {
+  display: block;
+  width: 100%;
+  height: 71px;
+  line-height: 71px;
+  margin: 0;
+  background-color: rgb(103, 184, 45);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.overlay .popup-form {
+  padding: 2% 2% 2% 2%;
+  color: rgb(110, 110, 110);
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.overlay .popup-form-header {
+  padding: 2% 1%;
+  line-height: 27px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.overlay .popup-form__input {
+  width: 60%;
+  height: 56px;
+  margin-top: 17px;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  ;
+  border: solid rgb(110, 110, 110) 1px;
+  color: rgb(110, 110, 110);
+  text-align: center;
+  border-radius: 3px;
+  margin:0;
+}
+
+.overlay .popup-form__btn {
+  width: 30%;
+  height: 60px;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 2%;
+  background-color: transparent;
+  color: rgb(103, 184, 45);
+  border: 1px solid rgb(103, 184, 45);
+  cursor: pointer;
+  border-radius: 3px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.overlay .popup-form__btn:hover {
+  background-color: rgb(103, 184, 45);
+  color: rgb(255, 255, 255);
+}
+
+
 @media (max-width: 1100px) {
   .img-container {
     grid: repeat(3, 145px) / repeat(6, 145px);
@@ -685,7 +797,7 @@ footer {
   .nav-links {
     opacity: 0;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     transition: all 200ms ease-in-out;

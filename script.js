@@ -51,3 +51,24 @@
         }
     };
 })();
+
+//Modal
+
+(function modalWindow() {
+    "use strict";
+
+    let order = document.querySelectorAll('.menu-order'),
+        overlay = document.querySelector('.overlay'),
+        closeModal = document.querySelector('.popup-close');
+
+    for (let i = 0; i <= order.length; i++) {
+        order[i].addEventListener('click', function () {
+            overlay.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+        closeModal.addEventListener('click', function () {
+            overlay.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+    }
+})();
