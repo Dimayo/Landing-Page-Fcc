@@ -141,13 +141,20 @@
 
   <section class="email-form">
     <h2>Stay updated</h2>
-    <p class="contacts-text">Get a 10% discount as well as information on the latest trends in healthy eating by
-      signing up now.</p>
-    <form action="/https://www.freecodecamp.com/email-submit" id="form">
+    <form action="#" id="form">
+      <p class="contacts-text">Get a 10% discount as well as information on the latest trends in healthy eating by
+        signing up now.</p>
       <input type="email" id="email" name="email" placeholder="Enter your email" required>
       <input type="submit" id="submit" value="subscribe">
+      <div class="send-email fade">
+        <p class="send-text">You have subscribed to our newsletter. Check your email for a 10% discount.
+        </p>
+        <img class="send-image" src="Images/newsletter.svg" height="30" width="30" alt="">
+      </div>
     </form>
   </section>
+
+
 
   <footer>
     <div class="footer-container">
@@ -188,15 +195,19 @@
         Order form
       </div>
       <div class="popup-form">
+        <p class="popup-form-header">
+          Enter your phone number and our specialist will contact you shortly
+        </p>
         <form action="#" class="main-form">
-          <div class="popup-form-header">
-            Enter your phone number and our specialist will contact you shortly
-          </div>
           <input class="popup-form__input" name="phone" type="tel" required placeholder="Your phone number">
           <button class="button popup-form__btn">
             Submit
           </button>
         </form>
+        <div class="send-form fade">
+          <p class="send-message">Thanks for your order! Please wait for our call</p>
+          <img class="send-image" src="Images/approved.svg" height="40" width="40" alt="">
+        </div>
       </div>
     </div>
   </div>

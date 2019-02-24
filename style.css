@@ -57,7 +57,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: 999;
+  z-index: 4;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.082),
     0 3px 6px rgba(0, 0, 0, 0.096);
 }
@@ -472,10 +472,41 @@ h3 {
   padding-bottom: 50px;
 }
 
+.send-email {
+  position: absolute;
+  z-index: 2;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 102%;
+  background-color: rgb(250, 250, 250);
+  display: none;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  margin:0 0;
+  padding:0;
+}
+
+.send-text {
+  color: rgb(110, 110, 110);
+  font-size:18px;
+  margin:0;
+  padding: 10px 3% 10px 3%;
+}
+
+.sen-image {
+  margin: 0;
+  padding: 0; 
+}
+
 #form {
-  max-width: 800px;
-  display: inline;
+  max-width: 1200px;
+  display: block;
   position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0;
 }
 
 #email {
@@ -509,19 +540,14 @@ h3 {
   font-family: 'Roboto', sans-serif;
   color: rgb(250, 250, 250);
   height: 38px;
-  transition: 0.5s;
+  transition: all 0.5s ease;
   background-color: rgb(103, 184, 45);
-  transition-property: background-color;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   font-weight: 500;
-  left: 291px;
-  bottom: -10px;
   cursor: pointer;
   margin-left: -5px;
 }
@@ -538,6 +564,8 @@ h3 {
   height: 32px;
   font-family: 'Roboto', sans-serif;
 }
+
+
 
 footer {
   background-color: rgb(245, 252, 236);
@@ -588,7 +616,7 @@ footer {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 3;
+  z-index: 5;
 }
 
 .overlay .popup {
@@ -596,8 +624,8 @@ footer {
   z-index: 4;
   left: 50%;
   top: 35vh;
-  max-width:750px;
-  width:85%;
+  max-width: 750px;
+  width: 85%;
   transform: translateX(-50%);
 }
 
@@ -633,11 +661,20 @@ footer {
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  position: relative;
+}
+
+.overlay .main-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 3% 2% 4% 2%;
 }
 
 .overlay .popup-form-header {
-  padding: 2% 1%;
-  line-height: 27px;
+  padding: 0;
+  margin: 0;
   font-size: 20px;
   text-align: center;
 }
@@ -645,23 +682,22 @@ footer {
 .overlay .popup-form__input {
   width: 60%;
   height: 56px;
-  margin-top: 17px;
   font-size: 18px;
   background-color: rgb(255, 255, 255);
-  ;
   border: solid rgb(110, 110, 110) 1px;
   color: rgb(110, 110, 110);
   text-align: center;
   border-radius: 3px;
-  margin:0;
+  margin: 0 1%;
+  padding: 0;
 }
 
 .overlay .popup-form__btn {
   width: 30%;
-  height: 60px;
+  height: 56px;
   font-size: 18px;
-  line-height: 22px;
-  margin: 2%;
+  margin: 0 1%;
+  padding: 0;
   background-color: transparent;
   color: rgb(103, 184, 45);
   border: 1px solid rgb(103, 184, 45);
@@ -675,6 +711,29 @@ footer {
 .overlay .popup-form__btn:hover {
   background-color: rgb(103, 184, 45);
   color: rgb(255, 255, 255);
+}
+
+.send-form {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 55;
+  border-radius: 3px;
+}
+
+.send-message {
+  color: rgb(103, 184, 45);
+  font-size: 30px;
+  margin: 0;
+  padding: 1% 2%;
+  text-align: center;
 }
 
 
@@ -845,6 +904,21 @@ footer {
   #submit {
     width: 30%;
   }
+
+  .main-form {
+    flex-direction: column;
+  }
+
+  .overlay .popup-form__input {
+    width: 80%;
+    margin: 1%;
+  }
+
+  .overlay .popup-form__btn {
+    width: 80%;
+    margin: 1%;
+  }
+
 
 }
 

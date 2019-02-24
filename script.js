@@ -1,7 +1,7 @@
 //Smooth scrolling
-
 (function smoothScrolling() {
     "use strict";
+
     const navLinks = document.querySelectorAll('.nav-link');
     for (let n in navLinks) {
         if (navLinks.hasOwnProperty(n)) {
@@ -19,9 +19,9 @@
 })();
 
 //Toggle Menu
-
 (function menuToggle() {
     "use strict";
+
     document.querySelector('.burger-menu').addEventListener('click', () => {
         const nav = document.querySelector('.nav-links');
         if (!nav.classList.contains('show')) {
@@ -33,9 +33,9 @@
 })();
 
 //Scroll change
-
 (function scrollChange() {
     "use strict";
+
     const parts = document.querySelectorAll('.part');
 
     window.onscroll = () => {
@@ -52,14 +52,32 @@
     };
 })();
 
-//Modal
+//Email send
+(function emailSend() {
+    "use strict";
 
+    let emailForm = document.querySelector('#form'),
+        sendEmailForm = document.querySelector('.send-email'),
+        submit = document.querySelector('#submit'),
+        email = document.querySelector('#email');
+
+    emailForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        sendEmailForm.style.display = 'flex';
+        submit.style = 'pointer-events: none';
+        email.style = 'pointer-events: none';
+    });
+})();
+
+//Modal
 (function modalWindow() {
     "use strict";
 
     let order = document.querySelectorAll('.menu-order'),
         overlay = document.querySelector('.overlay'),
-        closeModal = document.querySelector('.popup-close');
+        closeModal = document.querySelector('.popup-close'),
+        form = document.querySelector('.main-form'),
+        sendForm = document.querySelector('.send-form');
 
     for (let i = 0; i <= order.length; i++) {
         order[i].addEventListener('click', function () {
@@ -69,6 +87,11 @@
         closeModal.addEventListener('click', function () {
             overlay.style.display = 'none';
             document.body.style.overflow = '';
+        });
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            sendForm.style.display = 'flex';
         });
     }
 })();
