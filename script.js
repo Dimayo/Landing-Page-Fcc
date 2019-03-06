@@ -1,6 +1,5 @@
 //Smooth scrolling
 (function smoothScrolling() {
-    "use strict";
 
     const navLinks = document.querySelectorAll('.nav-link');
     for (let n in navLinks) {
@@ -20,8 +19,7 @@
 
 //Toggle Menu
 (function menuToggle() {
-    "use strict";
-
+   
     document.querySelector('.burger-menu').addEventListener('click', () => {
         const nav = document.querySelector('.nav-links');
         if (!nav.classList.contains('show')) {
@@ -34,8 +32,7 @@
 
 //Scroll change
 (function scrollChange() {
-    "use strict";
-
+   
     const parts = document.querySelectorAll('.part');
 
     window.onscroll = () => {
@@ -54,8 +51,7 @@
 
 //Email send
 (function emailSend() {
-    "use strict";
-
+   
     let emailForm = document.querySelector('#form'),
         sendEmailForm = document.querySelector('.send-email'),
         submit = document.querySelector('#submit'),
@@ -71,8 +67,7 @@
 
 //Modal
 (function modalWindow() {
-    "use strict";
-
+   
     let order = document.querySelectorAll('.menu-order'),
         overlay = document.querySelector('.overlay'),
         closeModal = document.querySelector('.popup-close'),
