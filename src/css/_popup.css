@@ -1,0 +1,125 @@
+.popup {
+    position: fixed;
+    z-index: 4;
+    left: 50%;
+    top: 35vh;
+    max-width: 750px;
+    width: 85%;
+    transform: translateX(-50%);
+}
+
+.popup__close {
+    position: absolute;
+    right: -20px;
+    top: -35px;
+    cursor: pointer;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.popup__title {
+    display: block;
+    width: 100%;
+    height: 71px;
+    line-height: 71px;
+    margin: 0;
+    background-color: rgb(103, 184, 45);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.popup__inner {
+    padding: 2% 2% 2% 2%;
+    color: rgb(110, 110, 110);
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: relative;
+}
+
+.popup__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 3% 2% 4% 2%;
+    flex-direction: column;
+}
+
+.popup__header {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.popup__input {
+    height: 56px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(110, 110, 110) 1px;
+    color: rgb(110, 110, 110);
+    text-align: center;
+    border-radius: 3px;
+    padding: 0;
+    width: 80%;
+    margin: 1%;
+}
+
+.popup__button {
+    height: 56px;
+    font-size: 18px;
+    padding: 0;
+    background-color: transparent;
+    color: rgb(103, 184, 45);
+    border: 1px solid rgb(103, 184, 45);
+    cursor: pointer;
+    border-radius: 3px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    width: 80%;
+    margin: 1%;
+}
+
+.popup__button:hover {
+    background-color: rgb(103, 184, 45);
+    color: rgb(255, 255, 255);
+}
+
+.popup__send {
+    height: 100%;
+    display: none;
+}
+
+.popup__message {
+    color: rgb(103, 184, 45);
+    font-size: 30px;
+    margin: 0;
+    padding: 1% 2%;
+    text-align: center;
+}
+
+@media (min-width: 580px) {
+
+    .popup__form {
+        flex-direction: row;
+    }
+
+    .popup__input {
+        width: 60%;
+        margin: 0 1%;
+    }
+
+    .popup__button {
+        width: 30%;
+        margin: 0 1%;
+    }
+
+}

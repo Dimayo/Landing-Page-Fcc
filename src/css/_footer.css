@@ -1,0 +1,19 @@
+.footer {
+    background-color: rgb(245, 252, 236);
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: row;
+    max-width: 1080px;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.footer__text {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(110, 110, 110, 0.800);
+}

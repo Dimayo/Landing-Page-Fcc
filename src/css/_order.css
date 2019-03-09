@@ -1,0 +1,25 @@
+.order {
+    display: flex;
+    border: none;
+    font-size: 15px;
+    color: rgb(250, 250, 250);
+    width: 150px;
+    height: 45px;
+    transition: 0.5s;
+    background-color: rgb(103, 184, 45);
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.order:hover {
+    background-color: rgb(110, 110, 110);
+}

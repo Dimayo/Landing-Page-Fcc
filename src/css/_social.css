@@ -1,0 +1,12 @@
+.social {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin: 0;
+    padding: 15px 0 0 0;
+}
+
+.social__button:hover path {
+    fill: rgb(103, 184, 45);
+}

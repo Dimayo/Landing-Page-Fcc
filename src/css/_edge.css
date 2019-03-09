@@ -1,0 +1,52 @@
+.edge {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.edge__items {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    max-width: 1200px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.edge__image {
+    height: 45px;
+    width: 45px;
+}
+
+.edge__item {
+    display: block;
+    flex-shrink: 0;
+    width: 180px;
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.edge__text {
+    color: rgb(110, 110, 110);
+    font-size: 18px;
+}
+
+@media (min-width: 580px) {
+    .edge__item {
+        width: 250px;
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 693px) {
+    .edge__item {
+        width: 270px;
+        max-width: 270px;
+    }
+}
+
+@media (min-width: 770px) {
+    .edge__item {
+        max-width: 200px;
+        width: auto;
+    }
+}

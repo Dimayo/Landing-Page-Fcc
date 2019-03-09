@@ -1,0 +1,7 @@
+.header {
+    background-image: url("Images/main.jpg");
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
